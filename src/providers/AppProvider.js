@@ -8,9 +8,12 @@ const AppProvider = ({children}) => {
   const [tamer, setTamer] = useState(0);
   const [cigdem, setCigdem] = useState(0);
 
+
   const setAmount = value => {
     setTotalAmount(value);
   };
+
+  
 
   return (
     <Provider
@@ -22,7 +25,7 @@ const AppProvider = ({children}) => {
         tamer,
         setTamer,
         cigdem,
-        setCigdem
+        setCigdem,
       }}>
       {children}
     </Provider>
